@@ -23,9 +23,9 @@ A boilerplate app for building RESTful APIs in Node.js using express and sequeli
     - NODE_ENV=test sequelize db:migrate
     - PORT=3000 npm run test 
         
-- Implemented basic JWT auth
-      - POST/ login, register
-      - GET/ me, users
+- Implemented basic JWT auth:
+   - POST/ login, register
+   - GET/ me, users
 
     
   
