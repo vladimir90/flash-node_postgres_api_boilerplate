@@ -11,9 +11,9 @@ A boilerplate app for building RESTful APIs in Node.js using express and sequeli
   rename .env-setup into .env and fill up variables
   
 - Run sequelize CLI commands:
-    Create database: sequelize db:create
-    Create migrations: sequelize db:migrate or db:migrate:all
-    Create seeds: sequelize db:seed or db:seed:all
+    - Create database: (sequelize db:create)
+    - Create migrations: (sequelize db:migrate or db:migrate:all)
+    - Create seeds: (sequelize db:seed or db:seed:all)
     
 - Run app 
     nodemon server/app.js
@@ -21,13 +21,13 @@ A boilerplate app for building RESTful APIs in Node.js using express and sequeli
 - Run tests (require to change default port for running tests)
 
     Make test database and migrations: 
-        NODE_ENV=test sequelize db:create
-        NODE_ENV=test sequelize db:migrate
-        PORT=3000 npm run test 
+        - NODE_ENV=test sequelize db:create
+        - NODE_ENV=test sequelize db:migrate
+        - PORT=3000 npm run test 
         
 - Implemented basic JWT auth
-      POST/ login, register
-      GET/ me, users
+      - POST/ login, register
+      - GET/ me, users
 
     
   
