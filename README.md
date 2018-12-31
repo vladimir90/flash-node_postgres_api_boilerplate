@@ -18,12 +18,10 @@ A boilerplate app for building RESTful APIs in Node.js using express and sequeli
 - Run app 
     nodemon server/app.js
 
-- Run tests (require to change default port for running tests)
-
-    Make test database and migrations: 
-        - NODE_ENV=test sequelize db:create
-        - NODE_ENV=test sequelize db:migrate
-        - PORT=3000 npm run test 
+- Run tests (require to change default port for running tests).Make test database and migrations: 
+    - NODE_ENV=test sequelize db:create
+    - NODE_ENV=test sequelize db:migrate
+    - PORT=3000 npm run test 
         
 - Implemented basic JWT auth
       - POST/ login, register
