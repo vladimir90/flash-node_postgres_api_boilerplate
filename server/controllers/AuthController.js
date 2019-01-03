@@ -51,13 +51,13 @@ async function register(req, res) {
     lastName
   })
 
-  if (result) {
-    return res
-    .status(200)
-    .json({
-      message: 'User registered'
-    })
-  }
+  if (!result) return res.status(422).send({message:'Creation failed'})
+
+  return res
+  .status(200)
+  .json({
+    message: 'User registered'
+  })
 
 }
 
@@ -78,11 +78,11 @@ async function users(req, res) {
 
     const users = await User.findAll()
     
-    if (users) {
-      return res
-      .status(200)
-      .json(users)
-    }
+    if (!users) throw boom.notFound('Users is not found')
+    
+    return res
+    .status(200)
+    .json(users)
 }
 
 

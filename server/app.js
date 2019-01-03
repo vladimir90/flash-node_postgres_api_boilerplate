@@ -30,7 +30,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use('/cms-api', ...routes)
+app.use(...routes)
 app.use("*", (req, res) => {res.send({ error: "Not found" }, 404)});
 app.use(error)
 
